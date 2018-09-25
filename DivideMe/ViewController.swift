@@ -36,13 +36,18 @@ class ViewController: UIViewController {
     @IBAction func divideNumbers(_ sender: UIButton) {
         let number1 = Int(number1TextField.text!)!
         let number2 = Int(number2Stepper.value)
-        let answer = number1 / number2
-        answerLabel1.text = "\(number1) ➗ \(number2) = \(answer)"
         
+        if number2 == 0 {
+            answerLabel1.text = "Can't devide by Zero!"
+            answerLabel2.text = ""
+        }else {
+            let answer = number1 / number2
+            answerLabel1.text = "\(number1) ➗ \(number2) = \(answer)"
+        
+            answerLabel2.text = "With a remainder of \(number1 % number2)"
+        }
     }
   
-    
-    
     
 
 }
