@@ -78,6 +78,7 @@
                         <outlet property="answerLabel2" destination="fua-MB-ouO" id="9mS-De-bnP"/>
                         <outlet property="number1TextField" destination="WGC-xE-ifj" id="Rd1-f4-cPk"/>
                         <outlet property="number2Label" destination="lE1-EL-iMf" id="ctw-sG-6PC"/>
+                        <outlet property="number2Stepper" destination="YKo-cQ-NQr" id="Cl4-bM-y7w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

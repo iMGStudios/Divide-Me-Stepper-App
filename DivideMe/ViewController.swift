@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var answerLabel2: UILabel!
     
+    @IBOutlet weak var number2Stepper: UIStepper!
     
     
     override func viewDidLoad() {
@@ -27,11 +28,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        number2Label.text = String(Int(sender.value))
     }
     
     
     
     @IBAction func divideNumbers(_ sender: UIButton) {
+        let number1 = Int(number1TextField.text!)!
+        let number2 = Int(number2Stepper.value)
+        let answer = number1 / number2
+        answerLabel1.text = "\(number1) ➗ \(number2) = \(answer)"
+        
     }
   
     
